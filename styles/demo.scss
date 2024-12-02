@@ -1,0 +1,90 @@
+/* color variable declarations */
+$header-color: #3de723;
+$paragraph-color: #ddd333;
+$main-color: rgb(210, 210, 221);
+$footer-color: #336c95;
+$para-fontsize: 15px;
+$nav-bgColor: dodgerblue;
+/* browser reset code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: verdana;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    background-color: $main-color;
+    color: white;
+}
+header{
+    background-color: $header-color;
+    padding: 50px;
+}
+h1{
+    margin-bottom: 20px;
+}
+p{
+    
+    text-align: justify;
+    background-color: $paragraph-color;
+    font-size: $para-fontsize;
+}
+button{
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin:10px 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    background-color: transparent;
+}
+footer{
+    background-color: $footer-color;
+    color: white;
+    padding: 10px 0;
+    
+}
+nav{
+    ul{
+        li{
+            display: inline-block;
+            a{
+                text-transform: uppercase;
+                font-weight: bold;
+                color: white;
+                padding: 10px 25px;
+                margin: 20px 20px;
+                transition: 0.5s;
+                border-radius: 25px;
+                
+            }
+            a:hover{
+                background-color: $nav-bgColor;
+            }
+        }
+    }
+}
